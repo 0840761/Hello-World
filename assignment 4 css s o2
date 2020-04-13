@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css selectors o2</title>
+<style>
+     p:nth-child(odd){
+       background:brown;
+   }
+   p:nth-child(even){
+       background:chartreuse;
+   }  
+   p:first-child{
+       background:red;
+   } 
+   p:last-child{
+       background:aqua;
+   }
+   p:nth-child(2){
+       background:aquamarine;
+   }
+   p:nth-child(3n+0){
+       background:blanchedalmond;
+   }
+   p:only-child{
+       background:darkblue
+   }
+</style>
+</head>
+<body>
+
+    <p> p1</p>
+    <p> p2</p>
+    <div><p> p3</p></div>
+    <p> p4</p>
+    <p> p5</p>
+    <p> p6</p>
+    <p> p7</p>
+    <p> p8</p>
+    <p> p9</p>
+    <p> p10</p>
