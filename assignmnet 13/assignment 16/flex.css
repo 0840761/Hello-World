@@ -1,0 +1,13 @@
+*{ box-sizing: border-box; } 
+body{  height: 100vh; 
+    border:2px solid rgb(239, 95, 69); 
+    margin:0 auto; } 
+    .container{ display:flex;
+        flex-wrap:wrap; }
+     .box{ flex:1;
+     flex-basis: 15%; 
+     padding:10px; 
+     margin:5px; 
+     text-align: center;
+      background: rgb(239, 95, 69); } 
+      .box20{ flex:2; }
