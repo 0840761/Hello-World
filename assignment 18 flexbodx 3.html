@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FlexBox3</title> 
+<style>
+.flex-box {
+    border-style: dashed;
+    border-color:  rgb(255, 0, 0);
+    border-width: 2px;
+}
+.flex-container {
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+}
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: black;
+  width: 100px;
+  margin: auto;
+  border: 0.5px solid black;
+  text-align: center;
+  line-height: 155px;
+  font-size: 40px;
+  font-family: Sans-Serif;
+  font-weight: 100px;
+}
+</style>
+</head>
+<body>
+<div class="flex-box">
+<div class="flex-container">
+<div style="flex-grow: 1; background-color: #FA8072;">one</div>
+<div class="flex-container">
+<div style="flex-grow: 60; background-color : #B0E0E6;">two</div>
+<div style="flex-grow: 40; background-color: #98FB98;">three</div>
+<div class="flex-container">
+<div style="flex-grow: 40; background-color : yellow;">four</div>
+<div style="flex-grow: 60; background-color: #9370DB;">five</div>
+</body>
+</html>
