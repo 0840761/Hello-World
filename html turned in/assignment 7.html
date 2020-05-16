@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css specificity</title>
+<style>
+p:last-child {
+  background: red;
+}
+p.intro {
+  background-color: yellow;
+}
+p.c1 {
+    background-color:plum;
+}
+p.c2 {
+    background-color:seagreen;
+}
+#item01 {color:darkblue;
+}
+a:visited{
+    color:Pink;
+}
+a:link {
+  background-color: yellow;
+}
+a:active{
+        background-color: blue;
+    }
+ a:hover {
+  background-color:orangered;
+    }
+ .div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+p2:last-of-type {
+  background:skyblue;
+}
+div p3 {
+  background-color:orchid;
+}
+</style>
+</head>
+<body>
+<!--background everything to blue-->
+    <div style="background-color:lightblue">
+<!--making a box for everything that has tag div class=div1-->
+    <div class="div1"> <h1>This is a heading for this thing.</h1></div>
+<!--display yellow for class tag intro-->
+    <div class="div1"> <p class="intro">This is even more text that should be in yellow.</p></div>
+<!--display plum for class tag c1-->
+    <div class="div1"> <p class="c1">This is even more text that should be in plum.</p></div>
+<!--display seagreen for class tag c2-->
+    <div class="div1"> <p class="c2">This is even more text that should be in seagreen.</p></div>
+<!--display red as for p is the only and last child in this list-->
+    <div class="div1"> <p>This is even more text that should be in red.</p></div>
+<!--display skyblue as for p2 is the only child in this list-->
+    <div class="div1"> <p2>This is even more text that should be in skyblue.</p></div>
+<!--display orchid for all element with div p3-->
+    <div class="div1"> <p3>This is even more text that should be in orchid.</p></div>
+<!--making a box for the list that has tag div class=div1-->
+    <div class="div1"> <ul>
+<!--display darkblue for  things with item01 tag-->
+        <li id="item01">A thing that should be in darkblue.</li>
+<!--a link that has different color highlight on it for when you hover mouse, visted the website-->
+        <li><a href="https://www.abdc.com">ABDC Home Page</a></li>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation ball moving</title>
+<style>
+div {
+background-color: red;
+height: 100px;
+width: 100px;
+border-radius:50%;
+position: relative;
+animation-name: ball;
+animation: ball 5s infinite;
+}
+@keyframes ball {
+0%{left:1000px; top:0px;}
+25%{left:500px; top:0px;}
+50%{left:500px; top:500px;}
+75%{left:0px; top:500px;}
+100%{left:1000px; top:0px;}
+}
+</style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

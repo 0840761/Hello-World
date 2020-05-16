@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query #2</title>
+        <style>
+            .one{
+                grid-area: one;
+                background-color: rgb(255, 82, 20);
+                border-top: black solid 2px;
+                border-left: black solid 2px;
+            }
+            .two{
+                grid-area: two;
+                background-color: rgba(0, 204, 255, 0.966);
+                border-left: black solid 2px;
+            }
+            .three{
+                grid-area: three;
+                background-color: rgb(47, 255, 186);
+            }
+            .four{
+                grid-area: four;
+                background-color: rgb(255, 255, 21);
+                border-left: black solid 2px;
+            }
+            .five{
+                grid-area: five;
+                background-color: rgb(149, 59, 233);
+            }
+            .grid-container{
+                display: grid;
+                grid-template-areas: 'one one one one one one'
+                'two two two two three three'
+                'four four four five five five';
+            }
+            .grid-container > div{
+                text-align: center;
+                padding: 30px 0;
+                font-size: 20px;
+                font-weight: bold;
+                border-bottom: black solid 2px;
+                border-right: black solid 2px;
+            }
+             @media (max-width: 1200px){
+                .grid-container{
+                display: grid;
+                grid-template-areas: 'one one one one one one'
+                'two two two two two two'
+                'three three three three three three'
+                'four four four four four four'
+                'five five five five five five';
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="one">one</div>
+            <div class="two">two</div>
+            <div class="three">three</div>
+            <div class="four">four</div>
+            <div class="five">five</div>
+        </div>
+    </body>
+</html>

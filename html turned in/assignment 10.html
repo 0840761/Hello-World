@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<HEAD><TITLE>box model</TITLE></HEAD>
+<head>
+<style>
+div {
+width: 400px;
+border: 0.5px ;
+}
+div.boxmodel{
+width: 400px;
+padding: 10px;
+border: 5px solid gray;
+margin: 0;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+img{
+width:400;
+height:280;
+}
+</style>
+</head>
+<body>
+
+<div>
+<h3 align="center">Course Info</h6>
+
+<table align="center">
+<tr>
+<th>SEU COURSES</th>
+<th>CLASS-ROOMS</th>
+   <th>INSTRUCTORS</th>
+</tr>
+<tr>
+<td rowspan="2">IT230</td>
+<td>Class-room 1</td>
+   <td>Dr Othman</td>
+</tr>
+<tr>
+
+<td>Class-room 2</td>
+   <td>Dr Nasser</td>
+</tr>
+<tr>
+<td rowspan="2">IT 244</td>
+<td>Class-room 3</td>
+   <td>Ms Noura</td>
+</tr>
+<tr>
+
+<td>Class-room 4</td>
+   <td>Dr Ahmad</td>
+</tr>
+<tr>
+<td colspan="3">These Course Belong to CCI</td>
+</tr>
+</table>
+</div>
+<div class="boxmodel">
+<table align="center">
+<tr>
+<th>SEU COURSES</th>
+<th>CLASS-ROOMS</th>
+   <th>INSTRUCTORS</th>
+</tr>
+<tr>
+<td rowspan="2">IT230</td>
+<td>Class-room 1</td>
+   <td>Dr Othman</td>
+</tr>
+<tr>
+
+<td>Class-room 2</td>
+   <td>Dr Nasser</td>
+</tr>
+<tr>
+<td rowspan="2">IT 244</td>
+<td>Class-room 3</td>
+   <td>Ms Noura</td>
+</tr>
+<tr>
+
+<td>Class-room 4</td>
+   <td>Dr Ahmad</td>
+</tr>
+<tr>
+<td colspan="3">These Course Belong to CCI</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
